@@ -1,0 +1,129 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+
+}
+#containerGame{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    margin: 2vh auto;
+    
+}
+#containerGame H1{
+    text-align: center;
+    line-height: 600px;
+    font-family: monospace;
+}
+.box{
+    width: calc(100% / 10 - 4px);
+    margin-left: 3.6px;
+    height: calc(100% / 10 - 2px);
+    margin-top: 1.5px;
+    border: 2px solid rgb(43, 109, 43);
+    background-color: black;
+    color: lime;
+    float:left;
+    padding:10px ;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1em;
+}
+.green{
+
+    width: calc(100% / 10 - 4px);
+    margin-left: 3.6px;
+    height: calc(100% / 10 - 2px);
+    margin-top: 1.5px;
+    border: 2px solid black;
+    background-color: green;
+    float:left;
+    padding:10px ;
+    font-size: 1em;
+    
+}
+.red{
+    width: calc(100% / 10 - 4px);
+    margin-left: 3.6px;
+    height: calc(100% / 10 - 2px);
+    margin-top: 1.5px;
+    border: 2px solid black;
+    background-color: red;
+    float:left;
+    padding:10px ;
+    font-size: 1em;
+}
+
+.comandi {
+    width: 600px;
+    height: 20vh;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    margin: 1vh auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    font-family: monospace;
+    flex-wrap: wrap;
+    position: relative;
+}
+.left, .right{
+    width: 50%;
+    text-align: center;
+    height: 6vh;
+    background-color: gray;
+}
+.left input, .right input{
+    border: none;
+    outline: none;
+    height: 3vh;
+    margin-left:  50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-top: 5px;
+    
+    
+}
+button{
+    position: absolute;
+    width: 80px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2.3vh;
+    cursor: pointer;
+    height: 3vh;
+}
+.spiegazioni{
+    width: 100%;
+    height: calc(100% - 6vh);
+    background-color: green;
+    font-size: 1em;
+    padding: 5px;
+}
+@media screen and ( max-width:700px) {
+     
+    #containerGame{
+        width: 400px;
+        height: 400px;
+
+    }
+    #containerGame H1 {
+      line-height: 400px;
+    }
+
+    .comandi{
+        width: 400px;
+        height: auto;
+    
+    }
+    input{
+        width: 50%;
+    }
+    label{
+        font-size: 10px;
+    }
+    ::placeholder{
+        font-size: 10px;
+    }
+}
